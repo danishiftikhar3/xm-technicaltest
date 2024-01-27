@@ -1,24 +1,23 @@
 import React from "react";
-import logo from "./logo.svg";
+// import backgroundImage from "../../assets/images/home-bg.svg";
 import "./Home.scss";
+import MainView from "./components/MainView";
+import CryptoCards from "./components/CryptoCards";
 
 function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home">
+      <div
+        className="upper-container"
+        // style={{
+        //   backgroundImage: `url(${backgroundImage})`,
+        //   backgroundSize: "cover",
+        //   height: "100vh",
+        // }}
+      >
+        <MainView />
+        <CryptoCards />
+      </div>
     </div>
   );
 }

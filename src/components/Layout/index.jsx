@@ -6,11 +6,16 @@ import FooterContainer from "../Footer";
 
 const { Header, Content, Footer } = Layout;
 
+const headerStyle = {
+  height: 100,
+  backgroundColor: "#000000",
+  display: "flex",
+};
+
 function LayoutContainer() {
   return (
     <Layout>
-      <Header>
-        <h1>hi</h1>
+      <Header style={headerStyle}>
         <HeaderContainer />
       </Header>
       <Content>

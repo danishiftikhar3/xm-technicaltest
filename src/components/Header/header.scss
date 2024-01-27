@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+
+  &__img {
+    width: 139.213px;
+    height: 48.246px;
+    flex-shrink: 0;
+    align-self: center;
+  }
+  .ant-menu {
+    background-color: #000000;
+  }
+  .ant-menu .ant-menu-title-content {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
