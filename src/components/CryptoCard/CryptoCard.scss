@@ -2,6 +2,7 @@
   border-radius: 14.309px;
   border: 0.954px solid rgba(167, 167, 167, 0.2);
   background: rgba(140, 140, 140, 0.1);
+  margin-bottom: 30px;
   &__crypto-logo {
     width: 31.224px;
     height: 30px;
@@ -47,18 +48,18 @@
     line-height: 120%;
   }
   &__crypto-percentage-change {
-    color: #b1ffc2;
     text-shadow: 0px 0px 65.82px #ffc255;
     font-family: Roboto;
     font-size: 13.355px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 16.026px */
-    &__icon {
-      width: 20px;
-    //   height: px;
-      background-color: red;
-
+    margin-top: 10px;
+    &--positive {
+      color: #b1ffc2;
+    }
+    &--negative {
+      color: #ffa3a6;
     }
   }
 }
