@@ -3,6 +3,7 @@ import React from "react";
 import "./Home.scss";
 import MainView from "./components/MainView";
 import CryptoCards from "./components/CryptoCards";
+import XMFeatures from "./components/XMFeatures";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       >
         <MainView />
         <CryptoCards />
+        <XMFeatures />
       </div>
     </div>
   );
