@@ -4,6 +4,7 @@ import "./Home.scss";
 import MainView from "./components/MainView";
 import CryptoCards from "./components/CryptoCards";
 import XMFeatures from "./components/XMFeatures";
+import Registration from "./components/Registration";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         <MainView />
         <CryptoCards />
         <XMFeatures />
+        <Registration />
       </div>
     </div>
   );

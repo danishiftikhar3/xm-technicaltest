@@ -1,0 +1,249 @@
+.registration {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 25px;
+  &__heading {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.9%; /* 38.046px */
+    align-self: center;
+    padding-top: 40px;
+  }
+  &__event {
+    &__desc {
+      width: 477px;
+      align-self: center;
+      color: #fff;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px; /* 131.25% */
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__date {
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px;
+      &__text {
+        color: #fff;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 200% */
+        text-transform: uppercase;
+        align-self: center;
+        padding-top: 10px;
+      }
+      @media (max-width: 450px) {
+        border-top: none;
+        border-right: none;
+      }
+    }
+    &__time {
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &__text {
+        color: #fff;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 200% */
+        text-transform: uppercase;
+        // width: 89px;
+        align-self: center;
+        padding-top: 10px;
+      }
+      @media (max-width: 450px) {
+        border-top: none;
+        padding-top: 40px;
+        padding-bottom: 30px;
+      }
+    }
+    &__loc {
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      border-left: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &__text {
+        color: #fff;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 200% */
+        text-transform: uppercase;
+        width: 300px;
+        align-self: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      @media (max-width: 450px) {
+        border: none;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    flex-direction: column;
+
+    .ant-form-item-label label {
+      color: #fff;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__step {
+      &__text {
+        color: #ccc;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px; /* 100% */
+        padding-left: 10px;
+      }
+      &__progress {
+        border-radius: 4px;
+        width: 500px;
+        height: 8px;
+        margin-top: 10px;
+        background: #ddd;
+        @media (max-width: 450px) {
+            width: 350px;
+          }
+      }
+    }
+
+    &__input {
+      width: 500px;
+      @media (max-width: 450px) {
+        width: 350px;
+        align-self: center;
+      }
+    }
+    &__btn {
+      align-self: center;
+      width: 345px;
+      height: 40px;
+      background: #29a643;
+      border: 0px;
+      border-radius: 0px;
+      text-align: center;
+      font-family: "Bebas Neue Pro";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .ant-btn-default:disabled {
+      background: #ccc;
+      color: #fff;
+      text-align: center;
+      font-family: "Bebas Neue Pro";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    &__success {
+      border: 1px solid #31b63b;
+      background: #f3fef4;
+      padding: 50px;
+      flex-direction: column;
+      width: 80%;
+      align-self: center;
+      &__heading {
+        color: #3c763d;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      &__desc {
+        color: #3c763d;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 30px;
+      }
+    }
+  }
+  &__create-account {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 111.9%; /* 15.666px */
+    align-self: center;
+    margin-top: 30px;
+    &--red {
+      color: #d51820;
+    }
+  }
+  &__tc {
+    color: #ccb494;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    &--red {
+      color: #d51820;
+    }
+  }
+  .progress0 {
+    background: #ddd;
+  }
+  .progress50 {
+    background-image: linear-gradient(to right, #32aa43 50%, #ddd 50%);
+  }
+  .progress100 {
+    background: #32aa43;
+  }
+}
