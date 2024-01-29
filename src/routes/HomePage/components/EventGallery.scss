@@ -1,0 +1,33 @@
+.event-gallery {
+  background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  &__heading {
+    color: #252525;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 39px; /* 130% */
+    margin-top: 50px;
+
+  }
+  &__item {
+    width: 164px;
+    height: 164px;
+    flex-shrink: 0;
+    background-color: #dadada;
+    border: 1px solid #ffffff;
+    padding: 20px;
+  }
+  &__slider-container {
+    padding: 40px;
+    margin-bottom: 40px;
+    // background-color: red;
+    .slick-slide {
+      padding: 0 15px;
+    }
+  }
+}

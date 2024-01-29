@@ -5,6 +5,7 @@ import MainView from "./components/MainView";
 import CryptoCards from "./components/CryptoCards";
 import XMFeatures from "./components/XMFeatures";
 import Registration from "./components/Registration";
+import EventGallery from "./components/EventGallery";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         <CryptoCards />
         <XMFeatures />
         <Registration />
+        <EventGallery />
       </div>
     </div>
   );
