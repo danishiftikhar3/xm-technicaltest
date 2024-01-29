@@ -1,6 +1,6 @@
 This web application is created as part of XM recruitment process
 
-This website is live on URL: 
+This website is live on URL: http://xm-technicaltest.byethost12.com
 
  To start the app:
     USE NODE 20
