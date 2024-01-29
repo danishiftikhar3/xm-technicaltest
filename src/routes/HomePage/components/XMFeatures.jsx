@@ -17,6 +17,7 @@ const XMFeaturesCard = ({
           {headingText}
         </span>
         <img
+          alt={imgName}
           // eslint-disable-next-line no-undef
           src={require(`../../../assets/icons/${imgName}.png`)}
           className={`xmfeatures__card__heading-row__img${classAttribute}`}
@@ -70,6 +71,7 @@ function XMFeatures() {
             </div>
             <div>
               <img
+                alt="fast-execusion"
                 // eslint-disable-next-line no-undef
                 src={require(`../../../assets/icons/fast-execusion-icon.png`)}
                 className={`xmfeatures__card__heading-row__img--vertical`}

@@ -7,25 +7,18 @@ import XMFeatures from "./components/XMFeatures";
 import Registration from "./components/Registration";
 import EventGallery from "./components/EventGallery";
 import BenefitsGrid from "./components/BenefitsGrid";
+import Background from "./components/Background";
 
 function Home() {
   return (
     <div className="home">
-      <div
-        className="upper-container"
-        // style={{
-        //   backgroundImage: `url(${backgroundImage})`,
-        //   backgroundSize: "cover",
-        //   height: "100vh",
-        // }}
-      >
-        <MainView />
-        <CryptoCards />
-        <XMFeatures />
-        <Registration />
-        <EventGallery />
-        <BenefitsGrid />
-      </div>
+      <Background />
+      <MainView />
+      <CryptoCards />
+      <XMFeatures />
+      <Registration />
+      <EventGallery />
+      <BenefitsGrid />
     </div>
   );
 }

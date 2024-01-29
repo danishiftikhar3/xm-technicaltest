@@ -1,0 +1,103 @@
+.background {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  //   mix-blend-mode:screen;
+  &__img1 {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 150px;
+    height: 120px;
+    flex-shrink: 0;
+    @media (max-width: 450px) {
+      left: 20px;
+    }
+  }
+  &__img2 {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+  &__img3 {
+    position: absolute;
+    top: 290px;
+    left: -70px;
+    width: 150px;
+    height: 120px;
+    flex-shrink: 0;
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+  &__img4 {
+    position: absolute;
+    top: 120px;
+    right: -60px;
+    width: 140px;
+    height: 250px;
+    flex-shrink: 0;
+    @media (max-width: 450px) {
+      top: 510px;
+      right: -60px;
+    }
+  }
+  &__img5 {
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+  &__img6 {
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 150px;
+    height: 120px;
+    flex-shrink: 0;
+    @media (max-width: 450px) {
+      top: 20px;
+      right: -60px;
+    }
+  }
+  &__img7 {
+    position: absolute;
+    top: 700px;
+    left: -180px;
+    width: 600px;
+    height: 800px;
+    filter: blur(1.2px);
+    @media (max-width: 450px) {
+      z-index: -10;
+      left: -280px;
+      top: 1500px;
+    }
+  }
+  &__img8 {
+    position: absolute;
+    top: 450px;
+    right: -90px;
+    width: 900px;
+    height: 1200px;
+    flex-shrink: 0;
+    stroke-width: 40px;
+    stroke: rgba(41, 166, 67, 0.4);
+    filter: blur(8px);
+    @media (max-width: 450px) {
+      top: 250px;
+      right: -140px;
+    }
+  }
+}

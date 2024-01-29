@@ -33,6 +33,7 @@ function BenefitsGrid() {
           <Col xxl={12} xl={12} lg={12} md={12} sm={24} xs={24}>
             <Card className="benefits-grid__card authorised-card">
               <img
+                alt="authorised"
                 className="benefits-grid__card__img"
                 // eslint-disable-next-line no-undef
                 src={require("../../../assets/icons/authorised.png")}
@@ -49,6 +50,7 @@ function BenefitsGrid() {
           <Col xxl={12} xl={12} lg={12} md={12} sm={24} xs={24}>
             <Card className="benefits-grid__card committed-card">
               <img
+                alt="committed"
                 className="benefits-grid__card__img"
                 // eslint-disable-next-line no-undef
                 src={require("../../../assets/icons/committed.png")}
@@ -65,6 +67,7 @@ function BenefitsGrid() {
           <Col xxl={12} xl={12} lg={12} md={12} sm={24} xs={24}>
             <Card className="benefits-grid__card award-card">
               <img
+                alt="award"
                 className="benefits-grid__card__img"
                 // eslint-disable-next-line no-undef
                 src={require("../../../assets/icons/award.png")}
@@ -81,6 +84,7 @@ function BenefitsGrid() {
           <Col xxl={12} xl={12} lg={12} md={12} sm={24} xs={24}>
             <Card className="benefits-grid__card support-card">
               <img
+                alt="support"
                 className="benefits-grid__card__img"
                 // eslint-disable-next-line no-undef
                 src={require("../../../assets/icons/support.png")}
