@@ -6,6 +6,7 @@ import CryptoCards from "./components/CryptoCards";
 import XMFeatures from "./components/XMFeatures";
 import Registration from "./components/Registration";
 import EventGallery from "./components/EventGallery";
+import BenefitsGrid from "./components/BenefitsGrid";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
         <XMFeatures />
         <Registration />
         <EventGallery />
+        <BenefitsGrid />
       </div>
     </div>
   );

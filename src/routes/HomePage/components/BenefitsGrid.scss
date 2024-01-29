@@ -1,26 +1,184 @@
 .benefits-grid {
-  &__divider {
-    width: 72.275px;
-    height: 4px;
-    background: #d51820;
+  background: #fff;
+  padding: 70px;
+  @media (max-width: 1000px) {
+    padding: 120px;
   }
-  &__BFH__title {
-    color: #444;
-    font-family: Roboto;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 90px; /* 112.5% */
-    letter-spacing: -1.6px;
-    width: 283px;
+  @media (max-width: 450px) {
+    padding: 70px;
   }
-  &__BFH__desc {
-    color: #444;
-    font-family: Roboto;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 23.879px; /* 140.465% */
-    width: 209px;
+  &__BFH {
+    @media (max-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__red-divider {
+      width: 72.275px;
+      height: 4px;
+      background: #d51820;
+    }
+    &__title {
+      color: #444;
+      font-family: Roboto;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 90px; /* 112.5% */
+      letter-spacing: -1.6px;
+      width: 283px;
+      @media (max-width: 1000px) {
+        width: 90%;
+        align-self: center;
+      }
+      @media (max-width: 450px) {
+        font-size: 35px;
+        line-height: 48.265px;
+        width: 90%;
+        align-self: center;
+      }
+    }
+    &__desc {
+      color: #444;
+      font-family: Roboto;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23.879px; /* 140.465% */
+      width: 209px;
+      margin-top: 70px;
+      @media (max-width: 1000px) {
+        width: 80%;
+        margin-top: 20px;
+        align-self: center;
+      }
+      @media (max-width: 450px) {
+        font-size: 14px;
+        // width: 80%;
+        margin-top: 20px;
+        align-self: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &__card {
+    border: none;
+    @media (max-width: 450px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__img {
+      width: 49.257px;
+      height: 56.465px;
+      flex-shrink: 0;
+    }
+    &__title {
+      color: #444;
+      font-family: Roboto;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24.845px; /* 130.761% */
+      margin-top: 20px;
+    }
+    &__desc {
+      color: #444;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20.973px; /* 149.805% */
+      width: 246px;
+      margin-top: 20px;
+    }
+  }
+
+  .authorised-card {
+    position: relative;
+  }
+  .authorised-card:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    background-color: #ebebeb;
+    @media (max-width: 450px) {
+      width: 0px;
+    }
+  }
+
+  .authorised-card:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 1px;
+    background-color: #ebebeb;
+    @media (max-width: 450px) {
+      width: 0px;
+    }
+  }
+
+  .committed-card {
+    position: relative;
+    padding-left: 40px;
+    @media (max-width: 450px) {
+      padding: 0px;
+    }
+  }
+  .committed-card:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: #ebebeb;
+    @media (max-width: 450px) {
+      width: 0px;
+    }
+  }
+
+  .award-card {
+    position: relative;
+  }
+  .award-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    background-color: #ebebeb;
+    @media (max-width: 450px) {
+      width: 0px;
+    }
+  }
+  .support-card {
+    position: relative;
+    padding-left: 40px;
+    @media (max-width: 450px) {
+      padding: 0px;
+    }
+  }
+  .support-card:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 5px;
+    height: 5px;
+    background-color: #d51820;
+    border-radius: 50%;
+    @media (max-width: 450px) {
+      width: 0px;
+    }
   }
 }
