@@ -4,11 +4,13 @@ import PropTypes from "prop-types";
 import "./CryptoCard.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function CryptoCard({ crypto, isLoading }) {
+function CryptoCard({ crypto, isLoading, error }) {
   const { name, symbol, percent_change_24h, price_usd } = crypto;
   return (
     <Card size="small" className="crypto-card" loading={isLoading}>
-      {isLoading ? (
+      {error ? (
+        <div style={{ color: "#fff" }}>{`Failed to fetch crypto :-(`}</div>
+      ) : Object.keys(crypto).length === 0 ? (
         <></>
       ) : (
         <>
@@ -75,6 +77,7 @@ function CryptoCard({ crypto, isLoading }) {
 
 CryptoCard.propTypes = {
   isLoading: PropTypes.bool.isRequired,
+  error: PropTypes.string,
   crypto: PropTypes.shape({
     name: PropTypes.string,
     nameid: PropTypes.string,

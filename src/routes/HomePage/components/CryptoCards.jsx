@@ -6,11 +6,7 @@ import useFetchCrypto from "../../../hooks/useFetchCrypto";
 const cryptosToShowList = ["BTC", "ETH", "XRP", "LTC", "BCH"];
 
 function CryptoCards() {
-  const { data, isLoading } = useFetchCrypto();
-  const cryptoData = !isLoading
-    ? data.filter((crypto) => cryptosToShowList.includes(crypto.symbol))
-    : [];
-  //   console.log(cryptoData);
+  const { data, isLoading, error } = useFetchCrypto();
 
   return (
     <Row
@@ -25,12 +21,13 @@ function CryptoCards() {
       }}
     >
       {cryptosToShowList.map((cryptoSymbol) => {
-        const crypto = cryptoData.find(
-          (crypto) => crypto.symbol === cryptoSymbol
-        );
+        const crypto =
+          !isLoading && !error
+            ? data.find((crypto) => crypto.symbol === cryptoSymbol)
+            : {};
         return (
           <Col key={cryptoSymbol} xxl={4} xl={4} lg={4} md={7} sm={7} xs={20}>
-            <CryptoCard crypto={crypto || {}} isLoading={isLoading} />
+            <CryptoCard crypto={crypto} isLoading={isLoading} error={error} />
           </Col>
         );
       })}

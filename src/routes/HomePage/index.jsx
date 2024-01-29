@@ -1,7 +1,7 @@
 import React from "react";
-// import backgroundImage from "../../assets/images/home-bg.svg";
-import "./Home.scss";
-import MainView from "./components/MainView";
+
+import "./HomePage.scss";
+import ZeroSwapBanner from "./components/ZeroSwapBanner";
 import CryptoCards from "./components/CryptoCards";
 import XMFeatures from "./components/XMFeatures";
 import Registration from "./components/Registration";
@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="home">
       <Background />
-      <MainView />
+      <ZeroSwapBanner />
       <CryptoCards />
       <XMFeatures />
       <Registration />

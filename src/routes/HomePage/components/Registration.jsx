@@ -24,6 +24,19 @@ const validatePassword = (_, value) => {
   return isPasswordValid(value) ? Promise.resolve() : Promise.reject();
 };
 
+const renderValidationItem = ({ condition, validationText }) => {
+  const color = condition ? "#29A643" : "#959595";
+  return (
+    <div
+      key={validationText}
+      className="registration__form__password-validation-list__item"
+    >
+      <FontAwesomeIcon icon="fa-regular fa-circle-dot" style={{ color }} />
+      <span style={{ color, paddingLeft: "15px" }}>{validationText}</span>
+    </div>
+  );
+};
+
 function Registration() {
   const [form] = Form.useForm();
   const [step, setStep] = useState(1);
@@ -60,19 +73,6 @@ function Registration() {
     } else if (step === 2) {
       handleStep2Validator(email, password);
     }
-  };
-
-  const renderValidationItem = ({ condition, validationText }) => {
-    const color = condition ? "#29A643" : "#959595";
-    return (
-      <div
-        key={validationText}
-        className="registration__form__password-validation-list__item"
-      >
-        <FontAwesomeIcon icon="fa-regular fa-circle-dot" style={{ color }} />
-        <span style={{ color, paddingLeft: "15px" }}>{validationText}</span>
-      </div>
-    );
   };
 
   return (

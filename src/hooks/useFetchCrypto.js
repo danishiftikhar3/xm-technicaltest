@@ -9,10 +9,10 @@ const useFetchCrypto = () => {
   useEffect(() => {
     const fetchCrypto = async () => {
       try {
-        const response = await axios.get(
+        const { data } = await axios.get(
           "https://api.coinlore.net/api/tickers/"
         );
-        setData(response.data.data);
+        setData(data.data);
         setIsLoading(false);
       } catch (error) {
         setError(error);
