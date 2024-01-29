@@ -11,6 +11,11 @@ const headerStyle = {
   backgroundColor: "#000000",
   display: "flex",
 };
+const footerStyle = {
+  backgroundColor: "#000000",
+  display: "flex",
+  // height: 250,
+};
 
 function LayoutContainer() {
   return (
@@ -21,7 +26,7 @@ function LayoutContainer() {
       <Content>
         <Outlet />
       </Content>
-      <Footer>
+      <Footer style={footerStyle}>
         <FooterContainer />
       </Footer>
     </Layout>
