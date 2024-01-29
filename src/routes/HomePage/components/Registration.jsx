@@ -217,7 +217,15 @@ function Registration() {
         >
           {step === 1 ? (
             <>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
+              <Col
+                xxl={12}
+                xl={12}
+                lg={12}
+                md={12}
+                sm={12}
+                xs={22}
+                className="registration__form__input-col"
+              >
                 <Form.Item
                   name="fullName"
                   label="Full Name"
@@ -239,7 +247,15 @@ function Registration() {
                   />
                 </Form.Item>
               </Col>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
+              <Col
+                xxl={12}
+                xl={12}
+                lg={12}
+                md={12}
+                sm={12}
+                xs={22}
+                className="registration__form__input-col"
+              >
                 <Form.Item label="Date of Birth" name="dob">
                   <DatePicker
                     placeholder="dd/mm/yyyy"
@@ -252,7 +268,15 @@ function Registration() {
             </>
           ) : step === 2 ? (
             <>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
+              <Col
+                xxl={12}
+                xl={12}
+                lg={12}
+                md={12}
+                sm={12}
+                xs={22}
+                className="registration__form__input-col"
+              >
                 <Form.Item
                   name="email"
                   label="Email"
@@ -273,7 +297,15 @@ function Registration() {
                   />
                 </Form.Item>
               </Col>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
+              <Col
+                xxl={12}
+                xl={12}
+                lg={12}
+                md={12}
+                sm={12}
+                xs={22}
+                className="registration__form__input-col"
+              >
                 <Form.Item
                   name="password"
                   label="Password"
@@ -289,11 +321,12 @@ function Registration() {
                     shouldUpdate={(prevValues, currentValues) =>
                       prevValues.password !== currentValues.password
                     }
+                    className="registration__form__password-validation-list"
                   >
                     {({ getFieldValue }) => {
                       const password = getFieldValue("password") || "";
                       return (
-                        <div className="registration__form__password-validation-list">
+                        <div>
                           {renderValidationItem({
                             condition:
                               password.length >= 8 && password.length <= 15,
