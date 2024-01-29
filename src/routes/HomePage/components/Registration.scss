@@ -141,17 +141,18 @@
         height: 8px;
         margin-top: 10px;
         background: #ddd;
-        @media (max-width: 450px) {
-            width: 350px;
-          }
+        @media (max-width: 1024px) {
+        width: 350px;
+
+        }
       }
     }
 
     &__input {
       width: 500px;
-      @media (max-width: 450px) {
+      @media (max-width: 1024px) {
         width: 350px;
-        align-self: center;
+        // align-self: center;
       }
     }
     &__btn {

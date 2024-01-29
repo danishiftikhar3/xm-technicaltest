@@ -1,18 +1,19 @@
 .benefits-grid {
   background: #fff;
   padding: 70px;
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     padding: 120px;
   }
   @media (max-width: 450px) {
     padding: 70px;
   }
   &__BFH {
-    @media (max-width: 1000px) {
+    @media (max-width: 1024px) {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
     &__red-divider {
       width: 72.275px;
@@ -28,8 +29,9 @@
       line-height: 90px; /* 112.5% */
       letter-spacing: -1.6px;
       width: 283px;
-      @media (max-width: 1000px) {
-        width: 90%;
+      @media (max-width: 1024px) {
+        font-size: 42px;
+        width: 100%;
         align-self: center;
       }
       @media (max-width: 450px) {
@@ -37,6 +39,7 @@
         line-height: 48.265px;
         width: 90%;
         align-self: center;
+        font-size: 30px;
       }
     }
     &__desc {
@@ -48,7 +51,7 @@
       line-height: 23.879px; /* 140.465% */
       width: 209px;
       margin-top: 70px;
-      @media (max-width: 1000px) {
+      @media (max-width: 1024px) {
         width: 80%;
         margin-top: 20px;
         align-self: center;

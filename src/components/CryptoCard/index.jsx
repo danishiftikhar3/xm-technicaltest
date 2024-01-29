@@ -33,12 +33,12 @@ function CryptoCard({ crypto, isLoading }) {
               {symbol}
             </Col>
             <Col
-              xxl={6}
-              xl={6}
-              lg={6}
-              md={6}
-              sm={6}
-              xs={4}
+              xxl={7}
+              xl={7}
+              lg={7}
+              md={7}
+              sm={7}
+              xs={5}
               className="crypto-card__crypto-name"
             >
               {name}

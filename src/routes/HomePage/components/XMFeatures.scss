@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
+  margin-top: 80px;
   &__question {
     align-self: center;
     color: #fff;
@@ -41,11 +42,11 @@
     backdrop-filter: blur(45px);
     border-color: #0b0819;
     min-height: 260px;
-    @media (max-width: 820px) {
+    @media (max-width: 1024px) {
       margin-bottom: 25px;
     }
     &--competitive {
-      @media (min-width: 1000px) {
+      @media (min-width: 1024px) {
         margin-bottom: 30px;
       }
     }
@@ -72,7 +73,7 @@
           width: 98px;
           height: 95.846px;
           flex-shrink: 0;
-          @media (max-width: 820px) {
+          @media (max-width: 1024px) {
             width: 41.463px;
             height: 87.953px;
             flex-shrink: 0;
@@ -87,9 +88,9 @@
         width: 72.318px;
         height: 74px;
         flex-shrink: 0;
-        @media (max-width: 820px) {
+        @media (max-width: 1024px) {
           width: 41.463px;
-          height: 87.953px;
+          height: 72.953px;
           flex-shrink: 0;
         }
         @media (max-width: 450px) {

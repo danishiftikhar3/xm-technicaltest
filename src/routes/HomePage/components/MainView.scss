@@ -1,5 +1,6 @@
 .mainview-contianer {
   padding: 80px 50px 80px 50px;
+  margin-bottom: 40px;
   .innercontainer {
     display: flex;
     justify-content: center;
@@ -23,6 +24,9 @@
       line-height: 42px;
       text-align: center;
       margin-bottom: 5px;
+      @media (max-width: 1024px) {
+        font-size: 28px;
+      }
     }
     &__promotion-details {
       color: #fff;

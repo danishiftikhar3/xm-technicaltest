@@ -89,7 +89,7 @@ function Registration() {
           lg={6}
           md={8}
           sm={8}
-          xs={20}
+          xs={24}
         >
           <FontAwesomeIcon
             icon="fa-regular fa-calendar-check"
@@ -217,7 +217,7 @@ function Registration() {
         >
           {step === 1 ? (
             <>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={20}>
+              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
                 <Form.Item
                   name="fullName"
                   label="Full Name"
@@ -239,7 +239,7 @@ function Registration() {
                   />
                 </Form.Item>
               </Col>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={20}>
+              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
                 <Form.Item label="Date of Birth" name="dob">
                   <DatePicker
                     placeholder="dd/mm/yyyy"
@@ -252,7 +252,7 @@ function Registration() {
             </>
           ) : step === 2 ? (
             <>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={20}>
+              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
                 <Form.Item
                   name="email"
                   label="Email"
@@ -273,7 +273,7 @@ function Registration() {
                   />
                 </Form.Item>
               </Col>
-              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={20}>
+              <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={22}>
                 <Form.Item
                   name="password"
                   label="Password"
