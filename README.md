@@ -5,8 +5,8 @@ This website is live on URL: http://xm-technicaltest.byethost12.com
  To start the app:
     USE NODE 20
 
-    To start project, you can run:
-### `npm start`
+To start project, you can run:
+npm start
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
